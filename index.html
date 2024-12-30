@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My BI Portfolio</title>
+  <title>My Business Intelligence Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation Bar -->
   <header>
     <nav>
       <ul>
@@ -17,27 +20,43 @@
     </nav>
   </header>
 
-  <section id="home">
-    <h1>Welcome to My Business Intelligence Portfolio</h1>
-    <p>This is where I showcase my work using BI tools like Power BI, Tableau, and more.</p>
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My BI Portfolio</h1>
+      <p>Showcasing my expertise in Business Intelligence tools like Power BI, Tableau, and SQL.</p>
+      <a href="#projects" class="btn-main">See My Projects</a>
+    </div>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects">
     <h2>Featured Projects</h2>
-    <div class="project">
-      <h3>Project 1: Sales Analytics</h3>
-      <p>This project involves analyzing sales data and visualizing trends using Power BI.</p>
-      <iframe src="your-powerbi-report-link" width="800" height="600"></iframe> <!-- Embed Power BI -->
-    </div>
-    <div class="project">
-      <h3>Project 2: Healthcare Analytics</h3>
-      <p>This project involves analyzing patient data with Tableau to visualize healthcare trends.</p>
-      <iframe src="your-tableau-dashboard-link" width="800" height="600"></iframe> <!-- Embed Tableau -->
+
+    <div class="project-container">
+      <div class="project">
+        <img src="assets/project1.png" alt="Project 1">
+        <h3>Sales Analytics with Power BI</h3>
+        <p>Analyzing sales data and visualizing trends to drive business decisions.</p>
+        <iframe src="your-powerbi-report-link" width="800" height="600" frameborder="0"></iframe>
+      </div>
+
+      <div class="project">
+        <img src="assets/project2.png" alt="Project 2">
+        <h3>Healthcare Data Analysis with Tableau</h3>
+        <p>Visualizing patient data to uncover key healthcare trends and insights.</p>
+        <iframe src="your-tableau-dashboard-link" width="800" height="600" frameborder="0"></iframe>
+      </div>
     </div>
   </section>
 
+  <!-- Footer Section -->
   <footer>
     <p>&copy; 2024 Your Name | All Rights Reserved</p>
+    <ul class="social-links">
+      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com" target="_blank">GitHub</a></li>
+    </ul>
   </footer>
 </body>
 </html>
