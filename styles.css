@@ -102,16 +102,17 @@ nav ul li a:hover {
 
 .project-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center;   /* Center items horizontally */
+  gap: 40px;             /* Space between projects */
 }
 
 .project {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 45%;
-  margin-bottom: 40px;
+  width: 90%;
+  max-width: 1200px;       /* Ensure consistent width */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
